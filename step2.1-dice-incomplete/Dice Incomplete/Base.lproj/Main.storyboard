@@ -75,7 +75,7 @@
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="dismiss" destination="qUR-90-axl" eventType="touchUpInside" id="eNv-iK-9rE"/>
+                                    <action selector="dismiss" destination="qUR-90-axl" eventType="touchUpInside" id="MFR-RC-82B"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d5" translatesAutoresizingMaskIntoConstraints="NO" id="auL-3f-b4I">

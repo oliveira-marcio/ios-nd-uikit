@@ -23,6 +23,15 @@ class RollViewController: UIViewController {
         
         // Return a more convenient Int, initialized with the random value
         return Int(randomValue)
-    }    
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "rollDice" {
+            let controller = segue.destination as! DiceViewController
+        
+            controller.firstValue = randomDiceValue()
+            controller.secondValue = randomDiceValue()
+        }
+    }
 }
 

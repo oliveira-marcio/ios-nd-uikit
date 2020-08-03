@@ -23,14 +23,6 @@ class RollViewController: UIViewController {
         
         // Return a more convenient Int, initialized with the random value
         return Int(randomValue)
-    }
-
-    // MARK: Actions
-    
-    @IBAction func rollTheDice() {
-        performSegue(withIdentifier: "rollDice", sender: self)
-    }
-    
-    
+    }    
 }
 

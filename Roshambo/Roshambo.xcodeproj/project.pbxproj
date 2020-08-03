@@ -14,6 +14,7 @@
 		9C20D62B24D898B000351016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C20D62A24D898B000351016 /* Assets.xcassets */; };
 		9C20D62E24D898B000351016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C20D62C24D898B000351016 /* LaunchScreen.storyboard */; };
 		9C20D63924D898B000351016 /* RoshamboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C20D63824D898B000351016 /* RoshamboTests.swift */; };
+		9C20D64424D89E8B00351016 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C20D64324D89E8B00351016 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		9C20D63424D898B000351016 /* RoshamboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoshamboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C20D63824D898B000351016 /* RoshamboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboTests.swift; sourceTree = "<group>"; };
 		9C20D63A24D898B000351016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C20D64324D89E8B00351016 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				9C20D62A24D898B000351016 /* Assets.xcassets */,
 				9C20D62C24D898B000351016 /* LaunchScreen.storyboard */,
 				9C20D62F24D898B000351016 /* Info.plist */,
+				9C20D64324D89E8B00351016 /* ResultsViewController.swift */,
 			);
 			path = Roshambo;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				9C20D62624D898AE00351016 /* MainViewController.swift in Sources */,
 				9C20D62224D898AE00351016 /* AppDelegate.swift in Sources */,
 				9C20D62424D898AE00351016 /* SceneDelegate.swift in Sources */,
+				9C20D64424D89E8B00351016 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

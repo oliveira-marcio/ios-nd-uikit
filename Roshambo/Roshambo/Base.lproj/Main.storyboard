@@ -21,6 +21,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otb-Tc-WKm">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
                                         <state key="normal" image="rock"/>
+                                        <connections>
+                                            <segue destination="oXt-lN-ceR" kind="show" id="Dws-0d-S0K"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkD-F4-eew">
                                         <rect key="frame" x="0.0" y="272.5" width="414" height="273"/>
@@ -46,6 +49,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="118"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="124-2N-pCE">
+            <objects>
+                <viewController id="oXt-lN-ceR" customClass="ResultsViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jIG-Vz-KGg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SRo-FY-Udc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKd-91-PQW">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="269.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eEE-gc-bEM">
+                                        <rect key="frame" x="0.0" y="269.5" width="414" height="269"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ix1-JP-eVW">
+                                        <rect key="frame" x="0.0" y="538.5" width="414" height="269.5"/>
+                                        <state key="normal" title="Play Again"/>
+                                        <connections>
+                                            <action selector="dismiss" destination="oXt-lN-ceR" eventType="touchUpInside" id="Hhp-6f-BDN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oRy-d3-8sQ" firstAttribute="bottom" secondItem="SRo-FY-Udc" secondAttribute="bottom" id="Lec-PL-seA"/>
+                            <constraint firstItem="SRo-FY-Udc" firstAttribute="top" secondItem="oRy-d3-8sQ" secondAttribute="top" id="bZF-HW-pn0"/>
+                            <constraint firstItem="oRy-d3-8sQ" firstAttribute="trailing" secondItem="SRo-FY-Udc" secondAttribute="trailing" id="eJe-S8-ctC"/>
+                            <constraint firstItem="SRo-FY-Udc" firstAttribute="leading" secondItem="oRy-d3-8sQ" secondAttribute="leading" id="gpM-6i-FkA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oRy-d3-8sQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qmR-sB-A2T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ogd-Q4-tvm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="114"/>
         </scene>
     </scenes>
     <resources>

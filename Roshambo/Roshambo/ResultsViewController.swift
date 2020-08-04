@@ -8,10 +8,28 @@
 
 import UIKit
 
-class ResultsViewController: UIViewController {
+// MARK: ResultsViewController
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+class ResultsViewController: UIViewController {
+    
+    // MARK: Properties
+    
+    var humanValue: Int?
+    var computerValue: Int?
+    
+     // MARK: Outlets
+    
+    @IBOutlet var resultLabel: UILabel!
+    @IBOutlet var resultImage: UIImageView!
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let humanValue = self.humanValue {
+            self.resultLabel.text = "Player: \(humanValue)"
+        } else {
+            self.resultLabel.text = "Error"
+        }
     }
     
 

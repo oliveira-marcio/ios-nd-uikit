@@ -22,16 +22,22 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
                                         <state key="normal" image="rock"/>
                                         <connections>
-                                            <segue destination="oXt-lN-ceR" kind="show" id="Dws-0d-S0K"/>
+                                            <action selector="playRock" destination="BYZ-38-t0r" eventType="touchUpInside" id="scp-ME-9p3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkD-F4-eew">
                                         <rect key="frame" x="0.0" y="272.5" width="414" height="273"/>
                                         <state key="normal" image="paper"/>
+                                        <connections>
+                                            <action selector="playPaper" destination="BYZ-38-t0r" eventType="touchUpInside" id="dB4-1p-3TW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvN-eA-k0S">
                                         <rect key="frame" x="0.0" y="545.5" width="414" height="272.5"/>
                                         <state key="normal" image="scissors"/>
+                                        <connections>
+                                            <segue destination="oXt-lN-ceR" kind="presentation" identifier="playScissors" id="o7O-jF-YTa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -45,6 +51,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="oXt-lN-ceR" kind="presentation" identifier="playPaper" id="Zbg-1Y-4nV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,7 +62,7 @@
         <!--Results View Controller-->
         <scene sceneID="124-2N-pCE">
             <objects>
-                <viewController id="oXt-lN-ceR" customClass="ResultsViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultsViewController" id="oXt-lN-ceR" customClass="ResultsViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jIG-Vz-KGg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,12 +99,19 @@
                         <viewLayoutGuide key="safeArea" id="oRy-d3-8sQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="qmR-sB-A2T"/>
+                    <connections>
+                        <outlet property="resultImage" destination="eEE-gc-bEM" id="5Et-f6-hww"/>
+                        <outlet property="resultLabel" destination="NKd-91-PQW" id="Ppm-p6-fZd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ogd-Q4-tvm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="920" y="114"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="o7O-jF-YTa"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="paper" width="75" height="65"/>
         <image name="rock" width="75" height="65"/>

@@ -12,18 +12,20 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    // MARK Generate computer moves
     
-    // MARK Play moves
+    func randomComputerMove() -> Int {
+        return Int(arc4random() % 3)
+    }
+
+    // MARK Human moves
     
     @IBAction func playRock() {
         var controller: ResultsViewController
         controller = self.storyboard?.instantiateViewController(identifier: "ResultsViewController") as! ResultsViewController
         
         controller.humanValue = 0
+        controller.computerValue = randomComputerMove()
         
         present(controller, animated: true, completion: nil)
     }
@@ -40,6 +42,8 @@ class MainViewController: UIViewController {
         } else if segue.identifier == "playScissors" {
             controller.humanValue = 2
         }
+
+        controller.computerValue = randomComputerMove()
     }
 }
 

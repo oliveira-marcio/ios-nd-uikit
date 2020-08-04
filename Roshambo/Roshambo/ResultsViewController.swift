@@ -26,10 +26,27 @@ class ResultsViewController: UIViewController {
         super.viewWillAppear(animated)
         
         if let humanValue = self.humanValue {
-            self.resultLabel.text = "Player: \(humanValue)"
+            if let computerValue = self.computerValue {
+                self.resultLabel.text = "Player: \(humanValue) - \(computerValue)"
+            } else {
+                showAlert("Oops", message: "Error getting computer value")
+            }
         } else {
-            self.resultLabel.text = "Error"
+            showAlert("Oops", message: "Error getting human value")
         }
+    }
+    
+     // MARK: Error handling
+    
+    func showAlert(_ title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default) {_ in
+            self.dismiss()
+        }
+        alert.addAction(okAction)
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
 

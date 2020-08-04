@@ -18,21 +18,21 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DTd-37-IPp">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otb-Tc-WKm">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otb-Tc-WKm" userLabel="RockButton">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
                                         <state key="normal" image="rock"/>
                                         <connections>
                                             <action selector="playRock" destination="BYZ-38-t0r" eventType="touchUpInside" id="scp-ME-9p3"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkD-F4-eew">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkD-F4-eew" userLabel="PaperButton">
                                         <rect key="frame" x="0.0" y="272.5" width="414" height="273"/>
                                         <state key="normal" image="paper"/>
                                         <connections>
                                             <action selector="playPaper" destination="BYZ-38-t0r" eventType="touchUpInside" id="dB4-1p-3TW"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvN-eA-k0S">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvN-eA-k0S" userLabel="ScissorsButton">
                                         <rect key="frame" x="0.0" y="545.5" width="414" height="272.5"/>
                                         <state key="normal" image="scissors"/>
                                         <connections>

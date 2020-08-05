@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9C13AEF824DB0FA9004CCBE3 /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13AEF724DB0FA9004CCBE3 /* ZipCodeTextFieldDelegate.swift */; };
 		9C13AEFA24DB1077004CCBE3 /* CashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13AEF924DB1077004CCBE3 /* CashTextFieldDelegate.swift */; };
+		9C13AEFE24DB40C0004CCBE3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13AEFD24DB40C0004CCBE3 /* Utils.swift */; };
 		9CD6AFEC24DAE09200F826E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6AFEB24DAE09200F826E5 /* AppDelegate.swift */; };
 		9CD6AFEE24DAE09200F826E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6AFED24DAE09200F826E5 /* SceneDelegate.swift */; };
 		9CD6AFF024DAE09200F826E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD6AFEF24DAE09200F826E5 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		9C13AEF724DB0FA9004CCBE3 /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
 		9C13AEF924DB1077004CCBE3 /* CashTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashTextFieldDelegate.swift; sourceTree = "<group>"; };
+		9C13AEFD24DB40C0004CCBE3 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9CD6AFE824DAE09200F826E5 /* TextFieldsChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFieldsChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD6AFEB24DAE09200F826E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CD6AFED24DAE09200F826E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				9CD6AFEB24DAE09200F826E5 /* AppDelegate.swift */,
 				9CD6AFED24DAE09200F826E5 /* SceneDelegate.swift */,
 				9CD6AFEF24DAE09200F826E5 /* ViewController.swift */,
+				9C13AEFD24DB40C0004CCBE3 /* Utils.swift */,
 				9CD6B00D24DAF9BF00F826E5 /* Text Fields Delegates */,
 				9CD6AFF124DAE09200F826E5 /* Main.storyboard */,
 				9CD6AFF424DAE09300F826E5 /* Assets.xcassets */,
@@ -219,6 +222,7 @@
 				9C13AEFA24DB1077004CCBE3 /* CashTextFieldDelegate.swift in Sources */,
 				9CD6AFEE24DAE09200F826E5 /* SceneDelegate.swift in Sources */,
 				9C13AEF824DB0FA9004CCBE3 /* ZipCodeTextFieldDelegate.swift in Sources */,
+				9C13AEFE24DB40C0004CCBE3 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

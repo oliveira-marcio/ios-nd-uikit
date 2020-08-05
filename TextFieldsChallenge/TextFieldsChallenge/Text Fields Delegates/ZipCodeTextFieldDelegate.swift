@@ -10,8 +10,12 @@ import Foundation
 import UIKit
 
 class ZipCodeTextFieldDelegate : NSObject, UITextFieldDelegate {
+    private let maxCharacters = 5
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        print("zip: \(string)")
-        return true
+        var newText = textField.text! as NSString
+        newText = newText.replacingCharacters(in: range, with: string) as NSString
+        
+        return newText.length <= maxCharacters
     }
 }

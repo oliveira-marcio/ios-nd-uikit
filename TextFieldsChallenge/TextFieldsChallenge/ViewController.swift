@@ -10,14 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var zipCodeTextField: UITextField! // Should have max 5 digits
+    // MARK: Outlets
+    @IBOutlet var zipCodeTextField: UITextField!
     @IBOutlet var cashTextField: UITextField! // Fill from right to left: $0.01 -> $0.12 -> $1.23 -> $12.34 -> $123.45
     @IBOutlet var lockableTextField: UITextField!
     
+    // MARK: Text Field Delegate objects
     let zipCodeDelegate = ZipCodeTextFieldDelegate()
     let cashDelegate = CashTextFieldDelegate()
     let lockableDelegate = LockableTextFieldDelegate()
-
+    
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
        

@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Outlets
     @IBOutlet var zipCodeTextField: UITextField!
-    @IBOutlet var cashTextField: UITextField! // Fill from right to left: $0.01 -> $0.12 -> $1.23 -> $12.34 -> $123.45
+    @IBOutlet var cashTextField: UITextField!
     @IBOutlet var lockableTextField: UITextField!
     @IBOutlet var lockSwitch: UISwitch!
     

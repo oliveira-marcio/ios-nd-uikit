@@ -30,8 +30,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // cell for row at index path
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteThingCell")!
-        cell.textLabel?.text = favoriteThings[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteThingCell", for: indexPath)
+        cell.textLabel?.text = self.favoriteThings[indexPath.row]
         return cell
     }
 }

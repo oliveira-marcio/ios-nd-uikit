@@ -15,29 +15,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // MARK: Model
     
     let favoriteThings: [String] = [
-        //TODO: Fill this array with your favorite things. Then use this collection to populate your table.
+        "Márcio Oliveira",
+        "Vanele Oliveira",
+        "Lucas Oliveira",
+        "Pedro Oliveira"
     ]
 
     // MARK: Table View Data Source Methods
     
     // number of rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      
-        // TODO: Implement this method to get the correct row count
-        let placeholderCount = 2
-        return placeholderCount
+        return self.favoriteThings.count
     }
     
     // cell for row at index path
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      
-      // TODO: Implement method
-      // 1. Dequeue a reusable cell from the table, using the correct “reuse identifier”
-      // 2. Find the model object that corresponds to that row
-      // 3. Set the images and labels in the cell with the data from the model object
-      // 4. return the cell.
-        
-        let placeholderCell = UITableViewCell()
-        return placeholderCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteThingCell")!
+        cell.textLabel?.text = favoriteThings[indexPath.row]
+        return cell
     }
 }

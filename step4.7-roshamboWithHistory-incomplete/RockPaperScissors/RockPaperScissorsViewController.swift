@@ -86,8 +86,12 @@ class RockPaperScissorsViewController: UIViewController {
     // MARK: Segue
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //Notice that this code works for both Scissors and Paper
-        let controller = segue.destination as! ResultViewController
-        controller.match = self.match
+        if segue.identifier == "showHistory" {
+            let historyController = segue.destination as! HistoryViewController
+            historyController.history = self.history
+        } else {
+            let resultController = segue.destination as! ResultViewController
+            resultController.match = self.match
+        }
     }
 }

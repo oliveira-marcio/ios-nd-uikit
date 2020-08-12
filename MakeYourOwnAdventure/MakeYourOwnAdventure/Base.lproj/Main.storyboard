@@ -82,7 +82,7 @@ What should she do?</string>
         <!--View Controller-->
         <scene sceneID="lhf-ZE-BSI">
             <objects>
-                <viewController id="ITh-wY-WOo" sceneMemberID="viewController">
+                <viewController id="ITh-wY-WOo" customClass="MYOAViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="brb-XI-3EZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,7 +130,7 @@ What should she do?</string>
         <!--View Controller-->
         <scene sceneID="EnA-O8-Afq">
             <objects>
-                <viewController id="SNG-OI-kJ0" sceneMemberID="viewController">
+                <viewController id="SNG-OI-kJ0" customClass="MYOAViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TSv-1G-olz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

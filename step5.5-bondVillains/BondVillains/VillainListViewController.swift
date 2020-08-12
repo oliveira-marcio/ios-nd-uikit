@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  VillainListViewController.swift
 //  BondVillains
 //
 //  Created by Jason on 11/19/14.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-// MARK: - ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
+// MARK: - VillainListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class VillainListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // MARK: Properties
     
@@ -43,5 +43,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailController = storyboard?.instantiateViewController(withIdentifier: "VillainDetailViewController") as! VillainDetailViewController
+        detailController.villain = allVillains[indexPath.row]
+        navigationController?.pushViewController(detailController, animated: true)
     }
 }

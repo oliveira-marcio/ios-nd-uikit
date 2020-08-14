@@ -14,9 +14,8 @@ import UIKit
 class VillainCollectionViewController: UICollectionViewController {
     
     // MARK: Properties
-    
-    // TODO: Add outlet to flowLayout here.
-    
+    @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
+
     // Get ahold of some villains, for the table
     // This is an array of Villain instances
     let allVillains = Villain.allVillains
@@ -25,13 +24,34 @@ class VillainCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //TODO: Implement flowLayout here.
+        computeFlowLayout()
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.isHidden = false
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        computeFlowLayout()
+    }
+    
+    func computeFlowLayout() {
+        let space: CGFloat = 3.0
+        let numOfCols: CGFloat = UIDevice.current.orientation.isPortrait ? 3.0 : 5.0
+        let spacesBetweenCols = numOfCols - 1
+        
+        let portraitViewWidth = min(view.frame.size.width, view.frame.size.height)
+        let landscapeViewWidth = max(view.frame.size.width, view.frame.size.height)
+        let horizontalViewDimension = UIDevice.current.orientation.isPortrait ? portraitViewWidth : landscapeViewWidth
+
+        let dimension = (horizontalViewDimension - (spacesBetweenCols * space)) / numOfCols
+        
+        flowLayout.minimumInteritemSpacing = space
+        flowLayout.minimumLineSpacing = space
+        flowLayout.itemSize = CGSize(width: dimension, height: dimension)
+    }
+
     
     // MARK: Collection View Data Source
     
